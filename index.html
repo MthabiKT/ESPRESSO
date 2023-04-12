@@ -18,6 +18,49 @@
       .hero .content {
         padding: 30px;
       }
+      .about-content {
+        margin-top: 40px;
+      }
+      .about-content .container {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      .about-text {
+        position: relative;
+      }
+      .about-text .btn {
+        width: 60%;
+        display: block;
+        border-width: 1px;
+        letter-spacing: 0.1em;
+        border-style: solid;
+        border-color: #666;
+        margin: 20px 0;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none !important;
+        color: #000;
+        font-weight: bold;
+      }
+      .about-textBox {
+        padding: 20px 5% 20px 15%;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #e6e6e6;
+        box-sizing: border-box;
+        width: 108%;
+        margin-top: 140px;
+      }
+      .about-title {
+        position: relative;
+        letter-spacing: 0.1em;
+        line-height: 1.5em;
+        width: 100%;
+        border-bottom: 1px solid #666;
+      }
+      .about-image {
+        position: absolute;
+      }
     </style>
   </head>
   <body>
@@ -81,8 +124,45 @@
             </div>
           </div>
         </div>
-        <h1>iki</h1>
       </div>
+    </div>
+
+    <div class="about-content">
+      <h1 class="text-center">WELCOME TO iki ESPRESSO TOKYO!</h1>
+      <section class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-image">
+              <img
+                width="645"
+                class="img-fluid mx-4"
+                src="https://www.iki-espresso.com/wp-content/uploads/2018/05/cafe-top-03.jpg"
+                alt="Coffee and cafe specialist"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about-textBox">
+              <h3 class="about-title">
+                Coffee and<br />
+                cafe specialists
+              </h3>
+              <div class="about-text">
+                At iki, we bring the best coffee, food and services to our
+                customers. Our success as coffee and café specialists is a
+                result of the experiences we have been privileged to enjoy for
+                the past 25 years and the resulting friendships along the
+                way.<br />
+                <a
+                  class="btn"
+                  href="https://www.iki-espresso.com/cafe/about-us/"
+                  >ABOUT US</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
