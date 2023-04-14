@@ -38,7 +38,13 @@
         font-weight: 700;
         font-size: 60px;
       }
-
+      .about-content .backBlock {
+        top: 100px;
+        height: 200px;
+        position: sticky;
+        background-color: #f2f2f2;
+        width: 100%;
+      }
       .about-content,
       .menu {
         margin-top: 10%;
@@ -78,9 +84,11 @@
       }
       .about-textBox {
         padding: 20px 10% 20px 20%;
+        position: relative;
         border-width: 1px;
         border-style: solid;
         border-color: #e6e6e6;
+        background: white;
         box-sizing: border-box;
         width: 108%;
         margin-top: 140px;
@@ -150,7 +158,7 @@
                           <a class="nav-link" href="#about">Info</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Menu</a>
+                          <a class="nav-link" href="#menu">Menu</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link">iki Life</a>
@@ -254,6 +262,11 @@
         </div>
 
         <div class="row">
+          <div
+            class="backBlock"
+            data-bs-speed="5"
+            style="transform: translate3d(0px, 77px, 0px)"
+          ></div>
           <div class="col-md-5">
             <div class="about-image">
               <img
@@ -289,6 +302,7 @@
       </div>
     </div>
 
+    <a id="menu"></a>
     <div class="menu">
       <div class="container">
         <div class="row">
