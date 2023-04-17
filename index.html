@@ -33,6 +33,10 @@
       .hero .content {
         padding: 30px;
       }
+      .hero button {
+        padding-top: 10px;
+        border: none;
+      }
       h1 {
         font-family: "Mada", sans-serif;
         font-weight: 700;
@@ -103,11 +107,17 @@
       .about-image {
         position: absolute;
       }
+      .about-image img {
+        width: 620px;
+      }
       .contact {
         padding: 17% 8%;
       }
       .contact p {
         padding: 0 330px;
+      }
+      .gallery .container {
+        width: 85%;
       }
       .gallery-col {
         padding: 0;
@@ -124,7 +134,41 @@
         padding-bottom: 80px;
       }
       .navbar .container-fluid {
-        margin-left: 20%;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      @media (min-width: 992px) {
+        .about-community {
+          padding: 13px;
+        }
+      }
+      @media (max-width: 768px) {
+        .about-textBox {
+          padding: 20px 10% 20px 10%;
+          width: 104%;
+        }
+      }
+      @media (max-width: 767px) {
+        .contact p {
+          padding: 0 70px;
+        }
+        .about-content {
+          padding: 13px;
+        }
+        .about-community .col-md-6 {
+          padding: 32px;
+          margin: 0px;
+        }
+        .about-textBox {
+          padding: 20px 10% 20px 10%;
+          width: 104%;
+        }
+        .menu {
+          padding: 20px;
+          text-align: center;
+        }
       }
     </style>
   </head>
@@ -207,7 +251,11 @@
                     />
                   </div>
                   <div class="carousel-item">
-                    <img src="images/iki.jpg" class="d-block w-90" alt="..." />
+                    <img
+                      src="images/iki.jpg"
+                      class="img-fluid d-block w-90"
+                      alt="..."
+                    />
                   </div>
                 </div>
               </div>
@@ -229,7 +277,7 @@
 
       <div class="container">
         <div class="row about-community">
-          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+          <div class="col-md-6">
             <p>
               At iki, we welcome you to enjoy our great coffee and food in a
               friendly atmosphere while enjoying one of Tokyo's unique
@@ -283,8 +331,7 @@
           <div class="col-md-5">
             <div class="about-image">
               <img
-                width="630"
-                class="img-fluid mx-4"
+                class="img-fluid mx-auto"
                 src="https://www.iki-espresso.com/wp-content/uploads/2018/05/cafe-top-03.jpg"
                 alt="Coffee and cafe specialist"
               />
@@ -437,21 +484,21 @@
           <div class="col-md-12">
             <h4>iki Espresso</h4>
             <p>
-              東京都江東区常盤2-2-12 TEL.03-6659-4654 月-金 8:00 AM – 5:00 PM
-              土,日 8:00 AM – 6:00 PM 不定休
+              東京都江東区常盤2-2-12 TEL.03-6659-4654 月-金 8:00 AM - 5:00 PM
+              土,日 8:00 AM - 6:00 PM 不定休
             </p>
             <p>
-              2-2-12 Tokiwa, Koto-ku, Tokyo TEL.03-6659-4654 Mon-Fri 8:00 AM –
-              5:00 PM Sat, Sun 8:00 AM – 6:00 PM Irregular holidays
+              2-2-12 Tokiwa, Koto-ku, Tokyo TEL.03-6659-4654 Mon-Fri 8:00 AM -
+              5:00 PM Sat, Sun 8:00 AM - 6:00 PM Irregular holidays
             </p>
             <h4>iki Roastery & Eatery</h4>
             <p>
-              東京都 江東区 常盤 1-4-7 TEL.03-6659-2570 月火木金 8:00 AM – 5:00
-              PM 土日 8:00 AM – 6:00 PM 定休日 水
+              東京都 江東区 常盤 1-4-7 TEL.03-6659-2570 月火木金 8:00 AM - 5:00
+              PM 土日 8:00 AM - 6:00 PM 定休日 水
             </p>
             <p>
               1-4-7 Tokiwa, Koto-ku, Tokyo TEL.03-6659-2570 Mon, Tue, Thu, Fri
-              8:00 AM – 5:00 PM Sat, Sun 8:00 AM – 6:00 PM Regular holiday Wed
+              8:00 AM - 5:00 PM Sat, Sun 8:00 AM - 6:00 PM Regular holiday Wed
             </p>
           </div>
         </div>
